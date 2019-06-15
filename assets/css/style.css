@@ -1,0 +1,26 @@
+*{
+    font-size: 16px;
+}
+.header{
+    background-color: black;
+    height: 20px;
+    width: 100%;
+}
+.container{
+    margin-top: 30px;
+    min-height: 100%;
+}
+
+h1{
+    font-size: 300%;
+    font-weight:bolder;
+}
+
+
+.footer {
+    
+    background-color: black;
+    height: 20px;
+    width: 100%;
+    
+}
