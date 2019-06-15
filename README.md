@@ -9,3 +9,14 @@
 + The number of guesses decreases by 1 and the count goes from 9 to 8
 + After 10 failed guesses the user losses
 + The loss count increases by 1 and so on
+
+##Pseudocode (Steps taken)
++ 1st Push Materials- 
+    + Created the folder structure as per instruction
+
++ 2nd Push Materials- 
+    + Create Basic HTML layout for the game
+
++ 3rd Push Material- 
+    + Game concept 
+
