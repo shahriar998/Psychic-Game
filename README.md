@@ -20,3 +20,8 @@
 + 3rd Push Material- 
     + Game concept 
 
++ 4th Push Material-
+    + Working code 
+
++ 5th Push
+    + Pushed after taking jesse's advice to fix the random number error which was not guessing 26 before
