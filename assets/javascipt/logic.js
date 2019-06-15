@@ -5,15 +5,17 @@ var guessLeft = 9;
 var guessed = [];
 
 var computerOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-//options available for computer 
-// console.log(computerOptions.length);
 
-//to check computer is picking random number between 26 and displaying random aplhabet from the array
-var randomNumber = Math.floor(Math.random() * 26);
-var randomNumber1 = randomNumber - 1;
-// console.log(randomNumber);
-console.log(randomNumber1);
-var comGuessedAlpha = computerOptions[randomNumber1];
+//options available for computer 
+console.log(computerOptions.length);
+
+
+//to check computer is picking random number betweencomputerOptions.length and displaying random aplhabet from the array
+var randomNumber = Math.floor(Math.random() *computerOptions.length);
+
+console.log(randomNumber);
+
+var comGuessedAlpha = computerOptions[randomNumber];
 console.log(comGuessedAlpha);
 
 //user guessed alphabet
@@ -44,9 +46,9 @@ document.onkeyup = function (event) {
         guessed.push(keyPressed);
         choosenAlphabet.textContent=guessed;
 
-        randomNumber = Math.floor(Math.random() * 26);
-        randomNumber1 = randomNumber - 1;
-        comGuessedAlpha = computerOptions[randomNumber1];
+        randomNumber = Math.floor(Math.random() *computerOptions.length);
+        
+        comGuessedAlpha = computerOptions[randomNumber];
         console.log(comGuessedAlpha);
         guessed = [];
         guessLeft = 9;
@@ -56,10 +58,10 @@ document.onkeyup = function (event) {
 
 
     }
-    else {
+    else if
 
         
-        if (keyPressed !== comGuessedAlpha) {
+         (keyPressed !== comGuessedAlpha) {
 
             guessed.push(keyPressed);
             guessLeft--;
@@ -71,9 +73,9 @@ document.onkeyup = function (event) {
             if (guessLeft === 0) {
                 loss++
                 // console.log(guessLeft);
-                randomNumber = Math.floor(Math.random() * 26);
-                randomNumber1 = randomNumber - 1;
-                comGuessedAlpha = computerOptions[randomNumber1];
+                randomNumber = Math.floor(Math.random() *computerOptions.length);
+                
+                comGuessedAlpha = computerOptions[randomNumber];
                 lossNumber.textContent = loss;
                 guessLeft = 9;
                 guessLeftNumber.textContent = guessLeft;
@@ -90,10 +92,10 @@ document.onkeyup = function (event) {
 
         }
         
-        
+        winNumber.textContent = win;
     }
 
 
 
-    winNumber.textContent = win;
-};
+    // winNumber.textContent = win;
+
